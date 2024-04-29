@@ -1,0 +1,25 @@
+{% include "header.html" %}
+<div class="content">
+    <div class="container">
+        <h2 class="h2">Update you activity</h2>
+        <form class="card" action="{{url_for('update', id=id)}}" method="post">
+                <div class="form-group">
+                    <label >Activity:</label>
+                    <input type="text" value="{{ activity }}" name="activity" required >
+                </div>
+
+                <div class="form-group">
+                    <label >Date:</label>
+                    <input type="date"  name="date" required value="{{ date }}">
+                </div>
+                <div class="form-group">
+                    <label >Time:</label>
+                    <input type="time"  name="time" required value="{{ time }}">
+                </div>
+
+                <button class="login-btn" type="submit">Submit</button>
+
+        </form>
+    </div>
+</div>
+{% include "footer.html" %}

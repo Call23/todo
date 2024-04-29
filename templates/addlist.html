@@ -1,0 +1,42 @@
+{% include "header.html" %}
+<div class="content">
+    <div class="container">
+
+        <div class="message-container message success-message fade-out">
+             {% with messages = get_flashed_messages() %}
+                  {% if messages %}
+
+                    {% for message in messages %}
+                      <p>{{ message }}</p>
+                    {% endfor %}
+
+                  {% endif %}
+             {% endwith %}
+        </div>
+        <h2 class="h2">Enter Activity</h2>
+        <form class="card" action="{{url_for('addlist')}}" method="post">
+                <!-- Activity input -->
+                <div class="form-group">
+                    <label >Activity:</label>
+                    <input type="text"  name="activity" required>
+                </div>
+
+                <!-- Date input -->
+                <div class="form-group">
+                    <label >Date:</label>
+                    <input type="date"  name="date" required>
+                </div>
+
+                <!-- Time input -->
+                <div class="form-group">
+                    <label >Time:</label>
+                    <input type="time"  name="time" required>
+                </div>
+
+                <!-- Submit button -->
+                <button class="login-btn" type="submit">Submit</button>
+
+        </form>
+    </div>
+</div>
+{% include "footer.html" %}

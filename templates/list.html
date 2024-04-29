@@ -1,0 +1,36 @@
+{% include "header.html" %}
+<div class="content">
+    <div class="container">
+        <div class="welcome-message">
+            <h2>Welcome {{current_user.name}}, this is your todo list.</h2>
+        </div>
+        <div class="container-activity">
+            <div class="message-container message success-message fade-out">
+                 {% with messages = get_flashed_messages() %}
+                      {% if messages %}
+
+                        {% for message in messages %}
+                          <p>{{ message }}</p>
+                        {% endfor %}
+
+                      {% endif %}
+                 {% endwith %}
+            </div>
+            {%if todo%}
+                {% for list in todo:%}
+                    <div class="activity-item">
+                        <p class="activity-name">{{list.activity}} on {{list.date}} at {{list.time}}</p>
+                        <a class="delete-btn" href="{{url_for('delete', id = list.id)}}">Delete</a>
+                        <a class="update-btn" href="{{url_for('update', id = list.id)}}">Update</a>
+                    </div>
+
+                {%endfor%}
+
+            {%else%}
+                <a class="update-btn" href="{{url_for('addlist')}}">Add a list</a>
+            {%endif%}
+        </div>
+    </div>
+
+</div>
+{% include "footer.html" %}

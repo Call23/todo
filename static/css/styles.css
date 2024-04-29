@@ -1,0 +1,341 @@
+body{
+margin:0;
+}
+
+.logo {
+    width: 50px; /* Set the width of the logo */
+    height: auto; /* Maintain the aspect ratio */
+    border-radius: 10px; /* Add rounded corners if desired */
+    margin-right: 20px; /* Add space to the right of the logo */
+}
+
+.header {
+    background-color: #141E46; /* Background color for the header */
+    color: white; /* Text color for the header */
+    padding: 10px 10px; /* Add padding around the header */
+    display: flex; /* Use flexbox layout */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space out items evenly */
+    width:100%;
+    position:fixed;
+    top:0;
+    z-index: 1000; /* Ensure the header is above other elements */
+}
+
+/* Example styles for the header title */
+.header h1 {
+    font-size: 40px; /* Set the font size for the title */
+    margin: 0; /* Remove default margin */
+    font-family: Arial, sans-serif; /* Set the font family */
+}
+
+/* Example styles for navigation links in the header */
+.header nav a {
+    font-size: 20px;
+    color: white; /* Set text color for links */
+    text-decoration: none; /* Remove underline from links */
+    margin-right:50px;
+}
+
+/* Example hover effect for navigation links */
+.header nav a:hover {
+    color: #ccc; /* Change text color on hover */
+}
+
+.icon{
+    width: 20px; /* Set the width of the logo */
+    height: auto; /* Maintain the aspect ratio */
+    border-radius: 50px; /* Add rounded corners if desired */
+
+}
+.footer {
+    background-color: #333; /* Background color for the footer */
+    color: white; /* Text color for the footer */
+    padding: 15px 20px; /* Add padding around the header */
+    display: flex; /* Use flexbox layout */
+    justify-content: space-between; /* Space out items evenly */
+    align-items: center; /* Align items vertically */
+    bottom:0;
+}
+
+/* Style for footer sections (e.g., links, social media icons, etc.) */
+.footer .section {
+    display: flex; /* Use flexbox layout */
+    gap: 10px; /* Add spacing between items */
+    padding: 10px;
+}
+
+/* Style for footer links */
+.footer a {
+    font-size: 20px;
+    color: white; /* Set text color for links */
+    text-decoration: none; /* Remove underline from links */
+    padding: 0 5px; /* Add padding to links */
+}
+
+/* Hover effect for footer links */
+.footer a:hover {
+    color: #ccc; /* Change text color on hover */
+}
+
+.content {
+    background-image: url('https://images.unsplash.com/photo-1524230572899-a752b3835840?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8d2hpdGUlMjAlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fHww'); /* Set the background image */
+    background-size: cover; /* Make the image cover the entire element */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-position: center; /* Center the image */
+    background-attachment: fixed; /* Keep the image fixed in place when scrolling */
+    color: #333; /* Set a dark text color */
+    font-family: Arial, sans-serif; /* Specify the font family */
+    line-height: 1.5; /* Set line height for better readability */
+    margin:0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+
+}
+
+.content {
+
+    font-size: 24px; /* Set a base font size */
+}
+.container {
+    margin-top:3%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Full height */
+    width: 70%; /* Full width */
+    padding: 1% 10%;
+
+}
+
+
+/* Card styling */
+.card {
+    margin-left:15%;
+    margin-top:1%;
+    background-color: white; /* White background */
+    padding: 20px; /* Padding around the card */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    max-width: 80%; /* Maximum width */
+}
+
+.h2{
+     margin-top:7%;
+    margin-left:10%;
+    text-align: center; /* Center heading text */
+    color:#1a237e;
+
+}
+
+.forgot{
+     margin-left:10%;
+    text-align: center; /* Center heading text */
+}
+
+/* Form group styling */
+.form-group {
+    margin-bottom: 15px; /* Margin below each group */
+}
+
+/* Label styling */
+.form-group label {
+    display: block; /* Block display for labels */
+    margin-bottom: 5px; /* Margin below labels */
+}
+
+/* Input styling */
+.form-group input {
+    width: 100%; /* Full width */
+    padding: 10px; /* Padding around inputs */
+    border: 2px solid #ccc; /* Light border */
+    border-radius: 4px; /* Slightly rounded corners */
+    box-sizing: border-box; /* Include padding and border in width */
+}
+
+/* Submit button styling */
+.login-btn {
+    width: 50%; /* Full width */
+    padding: 10px 10px; /* Padding */
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text color */
+    border: none; /* No border */
+    border-radius: 4px; /* Slightly rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size:24px;
+    margin-left:25%;
+    margin-top:3%;
+}
+
+.login-btn:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+.signup-btn {
+    width: 40%; /* Full width */
+    padding: 10px 10px; /* Padding */
+    background-color: #5755FEFE; /* Green background */
+    color: white; /* White text color */
+    border: none; /* No border */
+    border-radius: 4px; /* Slightly rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size:24px;
+    margin-top:1%;
+    margin-left:10%;
+    text-decoration: none;
+
+}
+.signup-btn:hover {
+    background-color: blue; /* Darker green on hover */
+}
+
+.activity-item {
+    padding: 10px; /* Padding around each item */
+    border-bottom: 1px solid #e0e0e0; /* Light gray border between items */
+     margin-top:1%;
+}
+
+.activity-name {
+    font-weight: bold; /* Bold font for activity name */
+    color: #003C43; /* Blue color for activity name */
+     font-size: 30px;
+}
+
+/* Hover effect for list items */
+.activity-item:hover {
+    background-color: #f0f8ff; /* Light blue background on hover */
+}
+
+.container-activity {
+    margin-top:2%;
+    padding: 10px; /* Padding around the content */
+    background-color: white; /* White background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    text-align: center; /* Center the text */
+}
+
+/* Delete button styling */
+.delete-btn {
+    padding: 10px 15px; /* Padding */
+    background-color: #ff4d4d; /* Red background */
+    color: white; /* White text color */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-weight: bold; /* Bold text */
+     text-decoration: none;
+     margin-left:10%;
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+/* Hover effect */
+.delete-btn:hover {
+    background-color: #ff1a1a; /* Darker red on hover */
+}
+
+.update-btn {
+    padding: 10px 15px; /* Padding */
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text color */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-weight: bold; /* Bold text */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+     text-decoration: none;
+      margin-left:30%;
+}
+
+/* Hover effect */
+.update-btn:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+.welcome-message {
+    background-color: #FFFBDA;
+    border-radius: 10px;
+    font-size:24px;
+    text-align: center;
+    font-family: Rubik, sans-serif;
+    font-style: italic;
+}
+
+/* Success message */
+.success-message {
+    color: green;
+    font-weight: bold;
+}
+
+/* Error message */
+.error-message {
+    color: red;
+    font-weight: bold;
+}
+
+/* Informational message */
+.info-message {
+    color: blue;
+    font-style: italic;
+}
+
+/* Container for messages */
+./* Success message */
+.success-message {
+    color: green;
+    font-weight: bold;
+}
+
+/* Error message */
+.error-message {
+    color: red;
+    font-weight: bold;
+}
+
+/* Informational message */
+.info-message {
+    color: blue;
+    font-style: italic;
+}
+
+/* Container for messages */
+.message-container {
+    margin-left:30%;
+    margin-right:30%;
+    background:white;
+    padding: 2px;
+    border-radius: 5px;
+    margin-bottom: 1px;
+     text-align: center;
+    animation: fade-out 3s forwards;
+}
+
+
+.message {
+    animation: fade-in 0.5s;
+}
+
+@keyframes fade-out {
+        from {
+            opacity: 1; /* Start opacity */
+        }
+        to {
+            opacity: 0; /* End opacity */
+            visibility: hidden; /* Hide the element after animation */
+        }
+}
+
+.list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.list li {
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+    color: #1a237e;
+    margin-left:2%;
+    justify-content: center;
+
+}
